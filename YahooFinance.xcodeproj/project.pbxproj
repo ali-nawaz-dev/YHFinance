@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41A3836E78C86BA3ED235AA2 /* Pods_YahooFinanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC223E10B79A1521F3C540B9 /* Pods_YahooFinanceTests.framework */; };
+		6771C5830CEBF955769252F2 /* Pods_YahooFinance_YahooFinanceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512785E9D3DB7671A2C58300 /* Pods_YahooFinance_YahooFinanceUITests.framework */; };
+		7B497F8CAB0711E16AA8813F /* Pods_YahooFinance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AAB17DF565020BA02EC582 /* Pods_YahooFinance.framework */; };
+		8503940B276690BC0039CB7B /* ExchangesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503940A276690BC0039CB7B /* ExchangesListViewModel.swift */; };
+		8503940D276692DD0039CB7B /* ExchangeListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503940C276692DD0039CB7B /* ExchangeListTableViewCellViewModel.swift */; };
+		8503940F27669A2A0039CB7B /* ExchangeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503940E27669A2A0039CB7B /* ExchangeListTableViewCell.swift */; };
+		8573F17F27663C4B00DD0285 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573F17E27663C4B00DD0285 /* AppCoordinator.swift */; };
+		8573F1812766545300DD0285 /* ExchangeModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573F1802766545300DD0285 /* ExchangeModelResponse.swift */; };
+		8573F18327665DCD00DD0285 /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573F18227665DCD00DD0285 /* ExchangeService.swift */; };
+		8573F18527665F2600DD0285 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573F18427665F2600DD0285 /* Constants.swift */; };
+		85A57FDF27639B18006668ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A57FDE27639B18006668ED /* AppDelegate.swift */; };
+		85A57FE127639B18006668ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A57FE027639B18006668ED /* SceneDelegate.swift */; };
+		85A57FE327639B18006668ED /* ExchangeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A57FE227639B18006668ED /* ExchangeListViewController.swift */; };
+		85A57FE627639B18006668ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A57FE427639B18006668ED /* Main.storyboard */; };
+		85A57FE827639B19006668ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A57FE727639B19006668ED /* Assets.xcassets */; };
+		85A57FEB27639B19006668ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A57FE927639B19006668ED /* LaunchScreen.storyboard */; };
+		85A57FF627639B19006668ED /* YahooFinanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A57FF527639B19006668ED /* YahooFinanceTests.swift */; };
+		85A5800027639B19006668ED /* YahooFinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A57FFF27639B19006668ED /* YahooFinanceUITests.swift */; };
+		85A5800227639B19006668ED /* YahooFinanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A5800127639B19006668ED /* YahooFinanceUITestsLaunchTests.swift */; };
+		85EF27772767B4E000FDF4CE /* ExchangeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF27762767B4E000FDF4CE /* ExchangeListCoordinator.swift */; };
+		85EF27792767C36700FDF4CE /* ExchangeDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF27782767C36700FDF4CE /* ExchangeDetailCoordinator.swift */; };
+		85EF277B2767C96F00FDF4CE /* ExchangeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF277A2767C96F00FDF4CE /* ExchangeDetailViewModel.swift */; };
+		85EF27872767CCDE00FDF4CE /* ExchangeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF27862767CCDE00FDF4CE /* ExchangeDetailViewController.swift */; };
+		85EF278A2767CF3E00FDF4CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF27892767CF3E00FDF4CE /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85A57FF227639B19006668ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85A57FD327639B18006668ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85A57FDA27639B18006668ED;
+			remoteInfo = YahooFinance;
+		};
+		85A57FFC27639B19006668ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85A57FD327639B18006668ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85A57FDA27639B18006668ED;
+			remoteInfo = YahooFinance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AE57F0D82CED5B9B043761F /* Pods-YahooFinanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooFinanceTests.debug.xcconfig"; path = "Target Support Files/Pods-YahooFinanceTests/Pods-YahooFinanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9AD890DC5534148CDF5002 /* Pods-YahooFinanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooFinanceTests.release.xcconfig"; path = "Target Support Files/Pods-YahooFinanceTests/Pods-YahooFinanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		512785E9D3DB7671A2C58300 /* Pods_YahooFinance_YahooFinanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YahooFinance_YahooFinanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62890A83161E3D0442E6FE43 /* Pods-YahooFinance-YahooFinanceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooFinance-YahooFinanceUITests.release.xcconfig"; path = "Target Support Files/Pods-YahooFinance-YahooFinanceUITests/Pods-YahooFinance-YahooFinanceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		73AAB17DF565020BA02EC582 /* Pods_YahooFinance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YahooFinance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8503940A276690BC0039CB7B /* ExchangesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListViewModel.swift; sourceTree = "<group>"; };
+		8503940C276692DD0039CB7B /* ExchangeListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		8503940E27669A2A0039CB7B /* ExchangeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListTableViewCell.swift; sourceTree = "<group>"; };
+		8573F17E27663C4B00DD0285 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8573F1802766545300DD0285 /* ExchangeModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModelResponse.swift; sourceTree = "<group>"; };
+		8573F18227665DCD00DD0285 /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
+		8573F18427665F2600DD0285 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85A57FDB27639B18006668ED /* YahooFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A57FDE27639B18006668ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85A57FE027639B18006668ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85A57FE227639B18006668ED /* ExchangeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListViewController.swift; sourceTree = "<group>"; };
+		85A57FE527639B18006668ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85A57FE727639B19006668ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85A57FEA27639B19006668ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85A57FEC27639B19006668ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A57FF127639B19006668ED /* YahooFinanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooFinanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A57FF527639B19006668ED /* YahooFinanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceTests.swift; sourceTree = "<group>"; };
+		85A57FFB27639B19006668ED /* YahooFinanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooFinanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A57FFF27639B19006668ED /* YahooFinanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceUITests.swift; sourceTree = "<group>"; };
+		85A5800127639B19006668ED /* YahooFinanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85EF27762767B4E000FDF4CE /* ExchangeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListCoordinator.swift; sourceTree = "<group>"; };
+		85EF27782767C36700FDF4CE /* ExchangeDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailCoordinator.swift; sourceTree = "<group>"; };
+		85EF277A2767C96F00FDF4CE /* ExchangeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailViewModel.swift; sourceTree = "<group>"; };
+		85EF27862767CCDE00FDF4CE /* ExchangeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailViewController.swift; sourceTree = "<group>"; };
+		85EF27892767CF3E00FDF4CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8AA9A165182C04C6DD21D937 /* Pods-YahooFinance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooFinance.release.xcconfig"; path = "Target Support Files/Pods-YahooFinance/Pods-YahooFinance.release.xcconfig"; sourceTree = "<group>"; };
+		CC223E10B79A1521F3C540B9 /* Pods_YahooFinanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YahooFinanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB085A1A126328C76061AC1E /* Pods-YahooFinance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooFinance.debug.xcconfig"; path = "Target Support Files/Pods-YahooFinance/Pods-YahooFinance.debug.xcconfig"; sourceTree = "<group>"; };
+		EFA0C80D2121BCEBC50F8250 /* Pods-YahooFinance-YahooFinanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YahooFinance-YahooFinanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-YahooFinance-YahooFinanceUITests/Pods-YahooFinance-YahooFinanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85A57FD827639B18006668ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B497F8CAB0711E16AA8813F /* Pods_YahooFinance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A57FEE27639B19006668ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A3836E78C86BA3ED235AA2 /* Pods_YahooFinanceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A57FF827639B19006668ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6771C5830CEBF955769252F2 /* Pods_YahooFinance_YahooFinanceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85A57FD227639B18006668ED = {
+			isa = PBXGroup;
+			children = (
+				85A57FDD27639B18006668ED /* YahooFinance */,
+				85A57FF427639B19006668ED /* YahooFinanceTests */,
+				85A57FFE27639B19006668ED /* YahooFinanceUITests */,
+				85A57FDC27639B18006668ED /* Products */,
+				D413E0F0F96D0272F2236D6C /* Pods */,
+				89ADEFB9CABC424EA0141FA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85A57FDC27639B18006668ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85A57FDB27639B18006668ED /* YahooFinance.app */,
+				85A57FF127639B19006668ED /* YahooFinanceTests.xctest */,
+				85A57FFB27639B19006668ED /* YahooFinanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85A57FDD27639B18006668ED /* YahooFinance */ = {
+			isa = PBXGroup;
+			children = (
+				85EF277C2767CAC900FDF4CE /* App */,
+				85EF27802767CB0A00FDF4CE /* Models */,
+				85EF277E2767CADE00FDF4CE /* Views */,
+				85EF27842767CB7200FDF4CE /* ViewModels */,
+				85EF277D2767CAD400FDF4CE /* ViewControllers */,
+				85EF277F2767CAF800FDF4CE /* Coordinators */,
+				85EF27812767CB1F00FDF4CE /* NetworkApi */,
+				85EF27852767CB7C00FDF4CE /* Utilities */,
+				85A57FE727639B19006668ED /* Assets.xcassets */,
+				85A57FEC27639B19006668ED /* Info.plist */,
+			);
+			path = YahooFinance;
+			sourceTree = "<group>";
+		};
+		85A57FF427639B19006668ED /* YahooFinanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				85A57FF527639B19006668ED /* YahooFinanceTests.swift */,
+			);
+			path = YahooFinanceTests;
+			sourceTree = "<group>";
+		};
+		85A57FFE27639B19006668ED /* YahooFinanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85A57FFF27639B19006668ED /* YahooFinanceUITests.swift */,
+				85A5800127639B19006668ED /* YahooFinanceUITestsLaunchTests.swift */,
+			);
+			path = YahooFinanceUITests;
+			sourceTree = "<group>";
+		};
+		85EF277C2767CAC900FDF4CE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				85A57FDE27639B18006668ED /* AppDelegate.swift */,
+				85A57FE027639B18006668ED /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		85EF277D2767CAD400FDF4CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85EF27832767CB5200FDF4CE /* ExchangeListViewController */,
+				85EF27882767CCE200FDF4CE /* ExchangeDetailViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85EF277E2767CADE00FDF4CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85A57FE427639B18006668ED /* Main.storyboard */,
+				85A57FE927639B19006668ED /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85EF277F2767CAF800FDF4CE /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8573F17E27663C4B00DD0285 /* AppCoordinator.swift */,
+				85EF27762767B4E000FDF4CE /* ExchangeListCoordinator.swift */,
+				85EF27782767C36700FDF4CE /* ExchangeDetailCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		85EF27802767CB0A00FDF4CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8573F1802766545300DD0285 /* ExchangeModelResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		85EF27812767CB1F00FDF4CE /* NetworkApi */ = {
+			isa = PBXGroup;
+			children = (
+				8573F18227665DCD00DD0285 /* ExchangeService.swift */,
+			);
+			path = NetworkApi;
+			sourceTree = "<group>";
+		};
+		85EF27822767CB4500FDF4CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8503940E27669A2A0039CB7B /* ExchangeListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		85EF27832767CB5200FDF4CE /* ExchangeListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85A57FE227639B18006668ED /* ExchangeListViewController.swift */,
+				85EF27822767CB4500FDF4CE /* Cells */,
+			);
+			path = ExchangeListViewController;
+			sourceTree = "<group>";
+		};
+		85EF27842767CB7200FDF4CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8503940A276690BC0039CB7B /* ExchangesListViewModel.swift */,
+				8503940C276692DD0039CB7B /* ExchangeListTableViewCellViewModel.swift */,
+				85EF277A2767C96F00FDF4CE /* ExchangeDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		85EF27852767CB7C00FDF4CE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8573F18427665F2600DD0285 /* Constants.swift */,
+				85EF27892767CF3E00FDF4CE /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		85EF27882767CCE200FDF4CE /* ExchangeDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85EF27862767CCDE00FDF4CE /* ExchangeDetailViewController.swift */,
+			);
+			path = ExchangeDetailViewController;
+			sourceTree = "<group>";
+		};
+		89ADEFB9CABC424EA0141FA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73AAB17DF565020BA02EC582 /* Pods_YahooFinance.framework */,
+				512785E9D3DB7671A2C58300 /* Pods_YahooFinance_YahooFinanceUITests.framework */,
+				CC223E10B79A1521F3C540B9 /* Pods_YahooFinanceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D413E0F0F96D0272F2236D6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB085A1A126328C76061AC1E /* Pods-YahooFinance.debug.xcconfig */,
+				8AA9A165182C04C6DD21D937 /* Pods-YahooFinance.release.xcconfig */,
+				EFA0C80D2121BCEBC50F8250 /* Pods-YahooFinance-YahooFinanceUITests.debug.xcconfig */,
+				62890A83161E3D0442E6FE43 /* Pods-YahooFinance-YahooFinanceUITests.release.xcconfig */,
+				1AE57F0D82CED5B9B043761F /* Pods-YahooFinanceTests.debug.xcconfig */,
+				2D9AD890DC5534148CDF5002 /* Pods-YahooFinanceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85A57FDA27639B18006668ED /* YahooFinance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A5800527639B19006668ED /* Build configuration list for PBXNativeTarget "YahooFinance" */;
+			buildPhases = (
+				D93C29F186D3062ECEE68DF1 /* [CP] Check Pods Manifest.lock */,
+				85A57FD727639B18006668ED /* Sources */,
+				85A57FD827639B18006668ED /* Frameworks */,
+				85A57FD927639B18006668ED /* Resources */,
+				00CAC067D1DE66373EEC4B2B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YahooFinance;
+			productName = YahooFinance;
+			productReference = 85A57FDB27639B18006668ED /* YahooFinance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85A57FF027639B19006668ED /* YahooFinanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A5800827639B19006668ED /* Build configuration list for PBXNativeTarget "YahooFinanceTests" */;
+			buildPhases = (
+				38CF63DC6BA058291A224B6E /* [CP] Check Pods Manifest.lock */,
+				85A57FED27639B19006668ED /* Sources */,
+				85A57FEE27639B19006668ED /* Frameworks */,
+				85A57FEF27639B19006668ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85A57FF327639B19006668ED /* PBXTargetDependency */,
+			);
+			name = YahooFinanceTests;
+			productName = YahooFinanceTests;
+			productReference = 85A57FF127639B19006668ED /* YahooFinanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85A57FFA27639B19006668ED /* YahooFinanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A5800B27639B19006668ED /* Build configuration list for PBXNativeTarget "YahooFinanceUITests" */;
+			buildPhases = (
+				CA83AAFCBE2A88484DBE53B4 /* [CP] Check Pods Manifest.lock */,
+				85A57FF727639B19006668ED /* Sources */,
+				85A57FF827639B19006668ED /* Frameworks */,
+				85A57FF927639B19006668ED /* Resources */,
+				CBD92E23DDF8799FAA511E50 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85A57FFD27639B19006668ED /* PBXTargetDependency */,
+			);
+			name = YahooFinanceUITests;
+			productName = YahooFinanceUITests;
+			productReference = 85A57FFB27639B19006668ED /* YahooFinanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85A57FD327639B18006668ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					85A57FDA27639B18006668ED = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					85A57FF027639B19006668ED = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 85A57FDA27639B18006668ED;
+					};
+					85A57FFA27639B19006668ED = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 85A57FDA27639B18006668ED;
+					};
+				};
+			};
+			buildConfigurationList = 85A57FD627639B18006668ED /* Build configuration list for PBXProject "YahooFinance" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85A57FD227639B18006668ED;
+			productRefGroup = 85A57FDC27639B18006668ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85A57FDA27639B18006668ED /* YahooFinance */,
+				85A57FF027639B19006668ED /* YahooFinanceTests */,
+				85A57FFA27639B19006668ED /* YahooFinanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85A57FD927639B18006668ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A57FEB27639B19006668ED /* LaunchScreen.storyboard in Resources */,
+				85A57FE827639B19006668ED /* Assets.xcassets in Resources */,
+				85A57FE627639B18006668ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A57FEF27639B19006668ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A57FF927639B19006668ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00CAC067D1DE66373EEC4B2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YahooFinance/Pods-YahooFinance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YahooFinance/Pods-YahooFinance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YahooFinance/Pods-YahooFinance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38CF63DC6BA058291A224B6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YahooFinanceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA83AAFCBE2A88484DBE53B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YahooFinance-YahooFinanceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD92E23DDF8799FAA511E50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YahooFinance-YahooFinanceUITests/Pods-YahooFinance-YahooFinanceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YahooFinance-YahooFinanceUITests/Pods-YahooFinance-YahooFinanceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YahooFinance-YahooFinanceUITests/Pods-YahooFinance-YahooFinanceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D93C29F186D3062ECEE68DF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YahooFinance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85A57FD727639B18006668ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8573F18327665DCD00DD0285 /* ExchangeService.swift in Sources */,
+				8503940D276692DD0039CB7B /* ExchangeListTableViewCellViewModel.swift in Sources */,
+				8503940B276690BC0039CB7B /* ExchangesListViewModel.swift in Sources */,
+				85EF277B2767C96F00FDF4CE /* ExchangeDetailViewModel.swift in Sources */,
+				8573F1812766545300DD0285 /* ExchangeModelResponse.swift in Sources */,
+				85EF27792767C36700FDF4CE /* ExchangeDetailCoordinator.swift in Sources */,
+				8573F17F27663C4B00DD0285 /* AppCoordinator.swift in Sources */,
+				85EF27772767B4E000FDF4CE /* ExchangeListCoordinator.swift in Sources */,
+				85A57FE327639B18006668ED /* ExchangeListViewController.swift in Sources */,
+				8503940F27669A2A0039CB7B /* ExchangeListTableViewCell.swift in Sources */,
+				85EF278A2767CF3E00FDF4CE /* Extensions.swift in Sources */,
+				8573F18527665F2600DD0285 /* Constants.swift in Sources */,
+				85A57FDF27639B18006668ED /* AppDelegate.swift in Sources */,
+				85EF27872767CCDE00FDF4CE /* ExchangeDetailViewController.swift in Sources */,
+				85A57FE127639B18006668ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A57FED27639B19006668ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A57FF627639B19006668ED /* YahooFinanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A57FF727639B19006668ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A5800227639B19006668ED /* YahooFinanceUITestsLaunchTests.swift in Sources */,
+				85A5800027639B19006668ED /* YahooFinanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85A57FF327639B19006668ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85A57FDA27639B18006668ED /* YahooFinance */;
+			targetProxy = 85A57FF227639B19006668ED /* PBXContainerItemProxy */;
+		};
+		85A57FFD27639B19006668ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85A57FDA27639B18006668ED /* YahooFinance */;
+			targetProxy = 85A57FFC27639B19006668ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85A57FE427639B18006668ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A57FE527639B18006668ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85A57FE927639B19006668ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A57FEA27639B19006668ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85A5800327639B19006668ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85A5800427639B19006668ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85A5800627639B19006668ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB085A1A126328C76061AC1E /* Pods-YahooFinance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YahooFinance/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ce.YahooFinance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85A5800727639B19006668ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA9A165182C04C6DD21D937 /* Pods-YahooFinance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YahooFinance/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ce.YahooFinance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85A5800927639B19006668ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE57F0D82CED5B9B043761F /* Pods-YahooFinanceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ce.YahooFinanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YahooFinance.app/YahooFinance";
+			};
+			name = Debug;
+		};
+		85A5800A27639B19006668ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9AD890DC5534148CDF5002 /* Pods-YahooFinanceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ce.YahooFinanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YahooFinance.app/YahooFinance";
+			};
+			name = Release;
+		};
+		85A5800C27639B19006668ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA0C80D2121BCEBC50F8250 /* Pods-YahooFinance-YahooFinanceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ce.YahooFinanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YahooFinance;
+			};
+			name = Debug;
+		};
+		85A5800D27639B19006668ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62890A83161E3D0442E6FE43 /* Pods-YahooFinance-YahooFinanceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ce.YahooFinanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YahooFinance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85A57FD627639B18006668ED /* Build configuration list for PBXProject "YahooFinance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A5800327639B19006668ED /* Debug */,
+				85A5800427639B19006668ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A5800527639B19006668ED /* Build configuration list for PBXNativeTarget "YahooFinance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A5800627639B19006668ED /* Debug */,
+				85A5800727639B19006668ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A5800827639B19006668ED /* Build configuration list for PBXNativeTarget "YahooFinanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A5800927639B19006668ED /* Debug */,
+				85A5800A27639B19006668ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A5800B27639B19006668ED /* Build configuration list for PBXNativeTarget "YahooFinanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A5800C27639B19006668ED /* Debug */,
+				85A5800D27639B19006668ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85A57FD327639B18006668ED /* Project object */;
+}
